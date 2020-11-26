@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon-zoom" width="42" height="42" viewBox="0 0 42 42">
+    <defs>
+        <style>
+            .cls-2{fill:#fff}
+        </style>
+    </defs>
+    <path id="패스_363" fill="none" d="M0 0h42v42H0z"/>
+    <path id="패스_364" d="M24.854 22.231h-1.381l-.49-.472a11.381 11.381 0 1 0-1.224 1.224l.472.49v1.381l8.742 8.724 2.6-2.6zm-10.49 0a7.867 7.867 0 1 1 7.867-7.867 7.857 7.857 0 0 1-7.867 7.867z" class="cls-2" transform="translate(2.264 2.264)"/>
+    <path id="패스_365" d="M15.773 12.264h-3.509v3.509h-1.755v-3.509H7v-1.755h3.509V7h1.755v3.509h3.509z" class="cls-2" transform="translate(5.242 5.242)"/>
+</svg>

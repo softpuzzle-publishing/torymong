@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>토리몽</title>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="../../resources/plugins/fontawesome-free/css/all.min.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="../../resources/plugins/datatables/css/dataTables.bootstrap4.min.css">
+    <!-- date-range-picker -->
+    <link rel="stylesheet" href="../../../resources/plugins/daterangepicker/daterangepicker.css">
+    <!-- Template style -->
+    <link rel="stylesheet" href="../../resources/css/adminlte.css">
+    <!-- Common style -->
+    <link rel="stylesheet" href="../../resources/css/style.css">
+    <!-- Additional style -->
+    <link rel="stylesheet" href="../../resources/css/additional.css">
+</head>
+
+<body class="body-login"> <!-- 로그인 페이지에 body-login 클래스 필요 -->
+
+    <div id="login">
+        <div class="row row-0">
+            <div class="col-12 col-md">
+                <div class="login-slogan">
+                    <div class="text">
+                        <img src="../../resources/images/logo-img.jpg" alt="토리몽">
+                        <p>WELCOME</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md">
+                <div class="login">
+                    <div class="form">
+                        <h1>
+                            <strong>토리몽</strong>
+                            <p>SIGN IN</p>
+                        </h1>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="이름를 입력해주세요.">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="pw" placeholder="비밀번호를 입력해주세요.">
+                        </div>
+                        <div class="form-group">
+                            <label class="custom-control custom-control-checkbox-square">
+                                <input type="checkbox" id="" name=""><span>자동 로그인</span><i></i>
+                            </label>
+                        </div>
+                        <div class="btn-area">
+                            <button type="submit" class="btn btn-secondary btn-block" disabled id="btn-login" onclick="document.location.href='../administration/terms_list.html'">로그인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- REQUIRED SCRIPTS -->
+
+    <!-- jQuery -->
+    <script src="../../resources/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../../resources/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- DataTables -->
+    <script src="../../resources/plugins/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../../resources/plugins/datatables/js/dataTables.bootstrap4.js"></script>
+    <!-- moment -->
+    <script src="../../../resources/plugins/moment/moment.min.js"></script>
+    <!-- date-range-picker -->
+    <script src="../../../resources/plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../resources/js/adminlte.min.js"></script>
+    <!-- ui -->
+    <script src="../../resources/js/ui.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#email, #pw').keyup(function(){
+                if($('#email').val() !== '' && $('#pw').val() !== ''){
+                    $('#btn-login').prop('disabled',false);
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

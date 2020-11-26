@@ -1,0 +1,402 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>토리몽</title>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="../../resources/plugins/fontawesome-free/css/all.min.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="../../resources/plugins/datatables/css/dataTables.bootstrap4.min.css">
+    <!-- date-range-picker -->
+    <link rel="stylesheet" href="../../../resources/plugins/daterangepicker/daterangepicker.css">
+    <!-- Template style -->
+    <link rel="stylesheet" href="../../resources/css/adminlte.css">
+    <!-- Common style -->
+    <link rel="stylesheet" href="../../resources/css/style.css">
+    <!-- Additional style -->
+    <link rel="stylesheet" href="../../resources/css/additional.css">
+</head>
+
+<body class="sidebar-mini">
+    <div class="wrapper">
+
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand">
+            <!-- Mobile logo -->
+            <a href="../administration/terms_list.html" class="brand-logo-mobile d-lg-none">
+                <i class="icon-logo"><span class="sr-only">토리몽</span></i>
+            </a>
+
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" data-widget="pushmenu"  role="button"><i class="icon-menu"></i></a>
+                </li>
+            </ul>
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item d-none d-lg-block">
+                    <p class="welcome">
+                        Hello,  <strong>johndoe123</strong>
+                    </p>
+                </li>
+                <li class="nav-item">
+                    <a href="../login/login.html" class="btn-logout"><i class="icon-logout"><span class="sr-only">logout</span></i></a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar">
+            <!-- Brand Logo -->
+            <a href="../administration/terms_list.html" class="brand-link">
+                <img src="../../resources/images/logo-to.png"" alt="Logo" class="brand-image img-circle" style="opacity: .8">
+                <span class="brand-text">토리몽</span>
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar Menu -->
+                <nav>
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <li class="nav-item has-treeview menu-open">
+                            <a href="#" class="nav-link active">
+                                <i class="nav-icon fas fa-users-cog"></i>
+                                <p>
+                                    관리 콘솔
+                                    <i class="right icon-plus"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item has-treeview menu-open">
+                                    <a href="#" class="nav-link active">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>
+                                            정책 관리
+                                            <i class="right fas fa-angle-left"></i>
+                                        </p>
+                                    </a>
+                                    <ul class="nav nav-treeview">
+                                        <li class="nav-item">
+                                            <a href="../administration/terms_list.html" class="nav-link active">
+                                                <i class="far fa-dot-circle nav-icon"></i>
+                                                <p>약관 관리</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-treeview">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-users"></i>
+                                <p>
+                                    회원 관리
+                                    <i class="right icon-plus"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item has-treeview">
+                                    <a href="../member/member_list.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>
+                                            회원 목록
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item has-treeview">
+                                    <a href="../member/member_form.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>
+                                            회원 등록
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-treeview">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-map-marked-alt"></i>
+                                <p>
+                                    장소 관리
+                                    <i class="right icon-plus"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item has-treeview">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>
+                                            장소 목록
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item has-treeview">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>
+                                            장소 등록
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-treeview">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-robot"></i>
+                                <p>
+                                    토리몽 관리
+                                    <i class="right icon-plus"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item has-treeview">
+                                    <a href="../torymong/torymong_list.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>
+                                            토리몽 목록
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item has-treeview">
+                                    <a href="../torymong/torymong_form.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>
+                                            토리몽 등록
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-treeview">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-question"></i>
+                                <p>
+                                    미션 관리
+                                    <i class="right icon-plus"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item has-treeview">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>
+                                            미션 목록
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item has-treeview">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>
+                                            미션 등록
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item has-treeview">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>
+                                            상품 관리
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-treeview">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-info-circle"></i>
+                                <p>
+                                    문의 관리
+                                    <i class="right icon-plus"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item has-treeview">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>
+                                            문의 목록
+                                            <i class="right icon-s-arr-down"></i>
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-treeview">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-bullhorn"></i>
+                                <p>
+                                    공지사항 관리
+                                    <i class="right icon-plus"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item has-treeview">
+                                    <a href="../notice/notice_list.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>
+                                            공지사항 목록
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item has-treeview">
+                                    <a href="../notice/notice_form.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>
+                                            공지사항 등록
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-treeview">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon far fa-images"></i>
+                                <p>
+                                    배너 관리
+                                    <i class="right icon-plus"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item has-treeview">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>
+                                            배너 목록
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item has-treeview">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>
+                                            배너 등록
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <div class="content-header">
+                <h1>약관 관리</h1>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="icon-home"></i></li>
+                    <li class="breadcrumb-item">관리 콘솔</li>
+                    <li class="breadcrumb-item">정책 관리</li>
+                    <li class="breadcrumb-item active">약관 관리</li>
+                </ol>
+            </div>
+            <!-- /.content-header -->
+
+            <!-- Main content -->
+            <div class="content-body">
+                <div class="content">
+                    <div class="container-fluid">
+
+                        <!-- 실 컨텐츠 -->
+                        <div class="sub-title-area">
+                            <div class="sub-title">약관 등록</div>
+                        </div>
+                        <div class="card card-primary card-outline">
+                            <div class="card-body">
+                                <div class="row row-40">
+                                    <div class="col-12 col-md">
+                                        <div class="form-group">
+                                            <label for="form1">약관 종류</label>
+                                            <div>
+                                                <label class="custom-control custom-control-radio">
+                                                    <input type="radio" id="a1" name="Activation"><span>이용약관</span><i></i>
+                                                </label>
+                                                <label class="custom-control custom-control-radio">
+                                                    <input type="radio" id="a2" name="Activation"><span>개인정보처리방침</span><i></i>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md">
+                                        <div class="form-group">
+                                            <label for="form2">버전</label>
+                                            <div class="row row-10 align-items-center">
+                                                <div class="col-auto">v</div>
+                                                <div class="col-auto">
+                                                    <input type="text" class="form-control min-w-100px text-center" id="form2">
+                                                </div>
+                                                <div class="col">
+                                                    <span class="text-help">현재 버전 v2.0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row row-40 mt-0">
+                                    <div class="col">
+                                        <div>
+                                            에디터 영역
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-end">
+                            <a href="#none" class="btn btn-primary min-w-100px">저장</a>
+                            <a href="#none" class="btn btn-default min-w-100px ml-2">취소</a>
+                        </div>
+                        <!-- //실 컨텐츠 -->
+
+                    </div>
+                </div>
+            </div>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+
+        <!-- Main Footer -->
+        <footer class="main-footer">
+            <div class="copyright">
+                Copyright © 2020 토리몽 ALL RIGHT RESERVED
+            </div>
+            <div class="btn-top"><button type="button"><i class="icon-top"><span class="sr-only">TOP</span></i></button></div>
+        </footer>
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- REQUIRED SCRIPTS -->
+
+    <!-- jQuery -->
+    <script src="../../resources/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../../resources/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- DataTables -->
+    <script src="../../resources/plugins/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../../resources/plugins/datatables/js/dataTables.bootstrap4.js"></script>
+    <!-- moment -->
+    <script src="../../../resources/plugins/moment/moment.min.js"></script>
+    <!-- date-range-picker -->
+    <script src="../../../resources/plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../resources/js/adminlte.min.js"></script>
+    <!-- ui -->
+    <script src="../../resources/js/ui.js"></script>
+
+    <script>
+    </script>
+</body>
+
+</html>
