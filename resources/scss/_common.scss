@@ -191,7 +191,10 @@ select.form-control{
     .sub-title-area{margin-bottom: 7px;min-height: 24px;}
     .sub-title{font-size: 16px;}
 }
-
+.table{
+    .desc{min-height:250px;display:flex;align-items: center;}
+    .th-col{margin-bottom:15px;}
+}
 .table-top{
     margin-bottom: 10px;display: flex;justify-content: space-between;align-items: center;font-size: 15px;
 }
@@ -268,7 +271,7 @@ body.body-login{
 
 .w-100px{width: 100px !important;}
 .min-w-100px{min-width: 100px !important;}
-
+.w-20p{width:20% !important;}
 .btn{
     .icon-search{vertical-align: middle;}
     i{margin-right: 4px;

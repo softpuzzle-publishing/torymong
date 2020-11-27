@@ -94,8 +94,8 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-item has-treeview menu-open">
-                            <a href="#" class="nav-link active">
+                        <li class="nav-item has-treeview">
+                            <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-users"></i>
                                 <p>
                                     회원 관리
@@ -112,7 +112,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item has-treeview">
-                                    <a href="../member/member_form.html" class="nav-link active">
+                                    <a href="../member/member_form.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>
                                             회원 등록
@@ -121,8 +121,8 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-item has-treeview">
-                            <a href="#" class="nav-link">
+                        <li class="nav-item has-treeview menu-open">
+                            <a href="#" class="nav-link active">
                                 <i class="nav-icon fas fa-map-marked-alt"></i>
                                 <p>
                                     장소 관리
@@ -131,7 +131,7 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item has-treeview">
-                                    <a href="../place/place_list.html" class="nav-link">
+                                    <a href="../place/place_list.html" class="nav-link active">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>
                                             장소 목록
@@ -210,8 +210,8 @@
                                 </li>
                             </ul>
                         </li>
-                         <li class="nav-item has-treeview">
-                            <a href="#" class="nav-link">
+                        <li class="nav-item has-treeview">
+                            <a href="#" class="nav-link ">
                                 <i class="nav-icon fas fa-info-circle"></i>
                                 <p>
                                     문의 관리
@@ -256,7 +256,7 @@
                                 </li>
                             </ul>
                         </li>
-                         <li class="nav-item has-treeview">
+                        <li class="nav-item has-treeview">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon far fa-images"></i>
                                 <p>
@@ -294,11 +294,11 @@
         <div class="content-wrapper">
             <!-- Content Header (Page header) -->
             <div class="content-header">
-                <h1>회원 등록</h1>
+                <h1>장소 목록</h1>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><i class="icon-home"></i></li>
-                    <li class="breadcrumb-item">회원 관리 </li>
-                    <li class="breadcrumb-item active">회원 등록</li>
+                    <li class="breadcrumb-item">장소 관리 </li>
+                    <li class="breadcrumb-item active">장소 목록</li>
                 </ol>
             </div>
             <!-- /.content-header -->
@@ -307,105 +307,93 @@
             <div class="content-body">
                 <div class="content">
                     <div class="container-fluid">
+
                         <!-- 실 컨텐츠 -->
-                        <div class="card card-primary card-outline">
+                        <div class="card card-primary card-outline mb-4">
                             <div class="card-body">
                                 <div class="row row-40">
                                     <div class="col-12 col-md">
                                         <div class="form-group">
-                                            <label for="form1">이메일</label>
-                                            <input type="text" id="form1" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md">
-                                        <div class="form-group">
-                                            <label for="form2">상태</label>
-                                            <div>
-                                                <label class="custom-control custom-control-radio">
-                                                    <input type="radio" id="s1" name="status" checked><span>활성화</span><i></i>
-                                                </label>
-                                                <label class="custom-control custom-control-radio">
-                                                    <input type="radio" id="s2" name="status"><span>비활성화</span><i></i>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row row-40">
-                                    <div class="col-12 col-md">
-                                        <div class="form-group">
-                                            <label for="form3">패스워드</label>
-                                            <input type="password" id="form3" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md">
-                                        <div class="form-group">
-                                            <label for="form4">등급</label>
-                                            <select name="" id="" class="form-control">
-                                                <option value="">1</option>
-                                                <option value="">2</option>
-                                                <option value="">3</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row row-40">
-                                    <div class="col-12 col-md">
-                                        <div class="form-group">
-                                            <label for="form5">이름</label>
-                                            <input type="text" id="form5" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md">
-                                        <div class="form-group">
-                                            <label for="form6">닉네임</label>
-                                            <input type="text" id="form6" class="form-control">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row row-40">
-                                    <div class="col-12 col-md">
-                                        <div class="form-group">
-                                            <label for="form7">생년월일</label>
-                                            <input type="text" id="form7" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md">
-                                    </div>
-                                </div>
-                                <div class="row row-40">
-                                    <div class="col-12 col-md">
-                                        <div class="form-group">
-                                            <div>
-                                                <label for="form8">도감관리</label>
-                                                <button type="button" class="btn btn-secondary btn-sm ml-3 mt-n2">토리몽 검색</button>
-                                            </div>
-                                            <div class="my-collection">
-                                                <div class="list">
-                                                    <div class="item"><span>TR001</span><i class="icon-del"><span class="sr-only">삭제</span></i></div>
-                                                    <div class="item"><span>TR003</span><i class="icon-del"><span class="sr-only">삭제</span></i></div>
-                                                    <div class="item"><span>TR004</span><i class="icon-del"><span class="sr-only">삭제</span></i></div>
-                                                    <div class="item"><span>TR184</span><i class="icon-del"><span class="sr-only">삭제</span></i></div>
-                                                    <div class="item"><span>TR221</span><i class="icon-del"><span class="sr-only">삭제</span></i></div>
-                                                    <div class="item"><span>TR222</span><i class="icon-del"><span class="sr-only">삭제</span></i></div>
+                                            <label for="form1">기간</label>
+                                            <div class="row row-10 align-items-center">
+                                                <div class="col-auto col-md-2">
+                                                    <select name="" id="form1" class="form-control">
+                                                        <option value="">전체</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+                                                        </div>
+                                                        <input type="text" class="form-control float-right" data-event="rangeDatepicker" id="date-range">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-auto">
+                                                    <div class="btn-group" role="group">
+                                                        <button type="button" class="btn btn-default">오늘</button>
+                                                        <button type="button" class="btn btn-default">최근7일</button>
+                                                        <button type="button" class="btn btn-default">당월</button>
+                                                        <button type="button" class="btn btn-default">전월</button>
+                                                        <button type="button" class="btn btn-default">3개월</button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="row row-40">
-                                    <div class="col">
+                                    <div class="col-12 col-md">
                                         <div class="form-group">
-                                            <label for="form9">메모</label>
-                                            <textarea name="" id="" cols="" rows="3" class="form-control"></textarea>
+                                            <label for="form2">검색어</label>
+                                            <input type="text" class="form-control" id="form2">
                                         </div>
                                     </div>
                                 </div>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <button type="button" class="btn btn-dark min-w-100px">조회</button>
+                                </div>
                             </div>
                         </div>
-                        <div class="d-flex align-items-center justify-content-end">
-                            <a href="#none" class="btn btn-primary min-w-100px">등록</a>
-                            <a href="#none" class="btn btn-default min-w-100px ml-2">취소</a>
+
+                        <table class="table table-bordered" id="datatable">
+                            <caption>장소 목록 테이블</caption>
+                            <thead>
+                                <tr>
+                                    <th class="text-center">
+                                        <label class="custom-control custom-control-checkbox-primary m-0">
+                                            <input type="checkbox" id="" name=""><i></i>
+                                        </label>
+                                    </th>
+                                    <th class="text-center">No</th>
+                                    <th class="text-center">장소명</th>
+                                    <th class="text-center">장소코드</th>
+                                    <th class="text-center">핀아이콘</th>
+                                    <th class="text-center">장소위치</th>
+                                    <th class="text-center">생성일</th>
+                                    <th class="text-center">바로가기</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center">
+                                        <label class="custom-control custom-control-checkbox-primary m-0">
+                                            <input type="checkbox" id="" name=""><i></i>
+                                        </label>
+                                    </td>
+                                    <td class="text-center">9999</td>
+                                    <td class="text-center">카페픽</td>
+                                    <td class="text-center">CO001</td>
+                                    <td class="text-left">커피숍</td>
+                                    <td class="text-center">서울 강서구 마곡중앙로 161-17</td>
+                                    <td class="text-center">2020-11-27</td>
+                                    <td class="text-center"><a href="place_detail.html" class="text-underline" target="_blink">바로 가기</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a href="#none" class="btn btn-danger">삭제</a>
                         </div>
                         <!-- //실 컨텐츠 -->
 
