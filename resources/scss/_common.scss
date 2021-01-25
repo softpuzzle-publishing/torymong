@@ -1,3 +1,6 @@
+/* layout */
+.w-70{width:70%;}
+.w-30{width:30%;}
 /* icons */
 [class*=icon-]{display: inline-block;background-size: contain;background-repeat: no-repeat;background-position: 50% 50%;font-size: 0;line-height: 1;}
 
@@ -307,7 +310,6 @@ body.body-login{
 .text-help{color: #888;font-size: 14px}
 
 .form-group label{font-weight: 500;}
-
 .my-collection{
     border: 1px solid $border-color;padding: 1rem;border-radius: $border-radius;
     .list{
@@ -329,7 +331,11 @@ body.body-login{
 .excel-list{
     background-color: #f1f3f7;padding: 15px;border-radius: $border-radius;
     .list{display: inline-flex;-ms-flex-wrap: wrap;flex-wrap: wrap;padding-left: 1px;padding-top: 1px;max-height: 200px;overflow: auto;}
-    .item{padding: 6px 10px;border: 1px solid #ddd;width: 120px;margin-left: -1px;margin-top: -1px;font-size: 13px;}
+    .item{padding: 6px 10px;border: 1px solid #ddd;width: 120px;margin-left: -1px;margin-top: -1px;font-size: 13px;
+        &.active{
+            background-color:$primary;color:$white;
+        }
+    }
 }
 @include media-breakpoint-down(sm) {
     .hidden-code{
@@ -346,4 +352,29 @@ body.body-login{
 html.is-loading{
     body{overflow: hidden;}
     #loading{display: block;}
+}
+.modal-dialog{
+    &.hidden-code{
+        width:90%;
+        margin:0 auto;
+        .modal-content{
+            height:100%;overflow: auto;
+            .excel-list{
+                height:50vh;background:none;padding:0;
+                .list{max-height: inherit;background-color:#f1f3f7;padding:15px;}
+                .item{width:115px;}
+            }
+        }
+    }
+}
+@include media-breakpoint-down(sm){
+    .modal-dialog{
+        &.hidden-code{
+            .modal-content{
+                .excel-list{
+                    .item{width:100px;}
+                }
+            }
+        }
+    }  
 }

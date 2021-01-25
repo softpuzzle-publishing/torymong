@@ -444,8 +444,12 @@
                                     <div class="col-12 col-md">
                                         <div class="form-group">
                                             <label for="form13">콘텐츠 연결2</label>
-                                            <div>
-
+                                            <div class="d-flex">
+                                                <input type="text" id="form10" class="form-control">
+                                                <label class="btn btn-secondary btn-block" for="form-upload">
+                                                    <span>업로드</span>
+                                                    <input type="file" class="sr-only" id="form-upload">
+                                                </label>
                                             </div>
                                         </div>
                                     </div>
@@ -471,75 +475,7 @@
                                             <div>
                                                 <label for="form15">히든코드 관리</label>
                                                 <button type="button" class="btn btn-secondary btn-sm ml-3 mt-n2" id="form15"><i class="fas fa-file-upload"></i> 업로드(엑셀)</button>
-                                            </div>
-                                            <div class="excel-list">
-                                                <div class="list">
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden99</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1000</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden5000</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden1</span></div>
-                                                    <div class="item"><span>hidden10000</span></div>
-                                                </div>
+                                                <button type="button" class="btn btn-primary btn-sm ml-3 mt-n2" id="form16" data-toggle="modal" data-target="#modal-hidden-code">히든코드 보기</button>
                                             </div>
                                         </div>
                                     </div>
@@ -577,21 +513,255 @@
     </div>
     <!-- ./wrapper -->
 
-    <!-- modal : Documents -->
-    <div class="modal" tabindex="-1" role="dialog" id="modal-img-preview">
-        <div class="modal-dialog modal-dialog-centered modal-auto">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">이미지</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="icon-close"></i></button>
-                </div>
-                <div class="modal-body p-0">
-                    <img src="../../resources/images/@thumb1.png" alt="" class="img-enlarge">
+<!-- modal : Documents -->
+<div class="modal" tabindex="-1" role="dialog" id="modal-img-preview">
+    <div class="modal-dialog modal-dialog-centered modal-auto">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">이미지</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="icon-close"></i></button>
+            </div>
+            <div class="modal-body p-0">
+                <img src="../../resources/images/@thumb1.png" alt="" class="img-enlarge">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal : Documents -->
+<div class="modal" tabindex="-1" role="dialog" id="modal-hidden-code">
+    <div class="modal-dialog modal-dialog-centered modal-auto hidden-code">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">히든코드 보기</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="icon-close"></i></button>
+            </div>
+            <div class="modal-body p-0">
+                <div class="excel-list">
+                    <div class="list">
+                        <div class="item active"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item active"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden99</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden99</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden99</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden99</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden99</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden99</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden99</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden99</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden99</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden99</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden99</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden99</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden99</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden99</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden99</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
+</div>
     <!-- REQUIRED SCRIPTS -->
 
     <!-- jQuery -->

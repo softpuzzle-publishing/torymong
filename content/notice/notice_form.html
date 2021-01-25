@@ -330,7 +330,12 @@
                                     <label for="form3">내용</label>
                                     <textarea name="" id="form3" cols="" rows="15" class="form-control" maxlength="500" data-byte-target="#byte-check-cont"></textarea>
                                     <div class="text-right mt-2">(<span id="byte-check-cont">0</span>/500)</div>
+
+
+                                    <!-- 배너 에디터 -->
+                                    <!-- <textarea class="form-control" id="notice-edit"></textarea> -->
                                 </div>
+                                
                             </div>
                         </div>
                         <div class="d-flex align-items-center justify-content-end">
@@ -373,12 +378,16 @@
     <script src="../../resources/js/adminlte.min.js"></script>
     <!-- ui -->
     <script src="../../resources/js/ui.js"></script>
-
+    <script src="../../resources/plugins/ckeditor/ckeditor.js"></script>
     <script>
         $(document).ready(function(){
             $('#datatable').DataTable({
                 "searching": false,
             });
+        });
+        
+        CKEDITOR.replace('notice-edit', {
+            height: 500
         });
     </script>
 </body>

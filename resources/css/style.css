@@ -62,6 +62,11 @@
 
 .row-100 > [class^=col] { padding-left: 50px; padding-right: 50px; }
 
+/* layout */
+.w-70 { width: 70%; }
+
+.w-30 { width: 30%; }
+
 /* icons */
 [class*=icon-] { display: inline-block; background-size: contain; background-repeat: no-repeat; background-position: 50% 50%; font-size: 0; line-height: 1; }
 
@@ -340,6 +345,8 @@ body.body-login { height: 100vh; background: #91677E; }
 
 .excel-list .item { padding: 6px 10px; border: 1px solid #ddd; width: 120px; margin-left: -1px; margin-top: -1px; font-size: 13px; }
 
+.excel-list .item.active { background-color: #91677E; color: #ffffff; }
+
 @media (max-width: 767.98px) { .hidden-code .item { padding: 6px; width: auto; font-size: 12px; } }
 
 #loading { display: none; position: fixed; top: 0; left: 0; z-index: 1111; width: 100%; height: 100%; }
@@ -353,4 +360,16 @@ body.body-login { height: 100vh; background: #91677E; }
 html.is-loading body { overflow: hidden; }
 
 html.is-loading #loading { display: block; }
+
+.modal-dialog.hidden-code { width: 90%; margin: 0 auto; }
+
+.modal-dialog.hidden-code .modal-content { height: 100%; overflow: auto; }
+
+.modal-dialog.hidden-code .modal-content .excel-list { height: 50vh; background: none; padding: 0; }
+
+.modal-dialog.hidden-code .modal-content .excel-list .list { max-height: inherit; background-color: #f1f3f7; padding: 15px; }
+
+.modal-dialog.hidden-code .modal-content .excel-list .item { width: 115px; }
+
+@media (max-width: 767.98px) { .modal-dialog.hidden-code .modal-content .excel-list .item { width: 100px; } }
 /*# sourceMappingURL=style.css.map */
