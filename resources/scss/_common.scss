@@ -366,6 +366,12 @@ html.is-loading{
             }
         }
     }
+    &.search-torymong{
+        max-width:800px;
+        .modal-content{
+            width:100%;
+        }
+    }
 }
 @include media-breakpoint-down(sm){
     .modal-dialog{

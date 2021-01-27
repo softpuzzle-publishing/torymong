@@ -200,7 +200,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item has-treeview">
-                                    <a href="#" class="nav-link">
+                                    <a href="../mission/product.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>
                                             상품 관리
@@ -377,7 +377,7 @@
                                         <div class="form-group">
                                             <div>
                                                 <label for="form8">도감관리</label>
-                                                <button type="button" class="btn btn-secondary btn-sm ml-3 mt-n2">토리몽 검색</button>
+                                                <button type="button" class="btn btn-secondary btn-sm ml-3 mt-n2" data-toggle="modal" data-target="#modal-search-torymong">토리몽 검색</button>
                                             </div>
                                             <div class="my-collection">
                                                 <div class="list">
@@ -424,7 +424,38 @@
         </footer>
     </div>
     <!-- ./wrapper -->
-
+<!-- modal : Documents -->
+<div class="modal" tabindex="-1" role="dialog" id="modal-search-torymong">
+    <div class="modal-dialog modal-dialog-centered modal-auto search-torymong">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">토리몽 등록</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="icon-close"></i></button>
+            </div>
+            <div class="modal-body">
+                <table class="table table-bordered">
+                    <caption>장소 목록 테이블</caption>
+                    <thead>
+                        <tr>
+                            <th class="text-center">코드</th>
+                            <th class="text-center">토리몽</th>
+                            <th class="text-center">내용</th>
+                            <th class="text-center">추가</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-center">TR001</td>
+                            <td class="text-center">토리몽</td>
+                            <td class="text-center">토리몽을 찾아라!</td>
+                            <td class="text-center"><button type="button" class="btn btn-dark" target="_blink">추가</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
     <!-- REQUIRED SCRIPTS -->
 
     <!-- jQuery -->
