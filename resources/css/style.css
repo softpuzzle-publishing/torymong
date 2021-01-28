@@ -380,4 +380,8 @@ html.is-loading #loading { display: block; }
 .modal-dialog.encyclopedia .modal-content { width: 100%; }
 
 @media (max-width: 767.98px) { .modal-dialog.hidden-code .modal-content .excel-list .item { width: 100px; } }
+
+.remove-product { display: none; }
+
+.remove-product.active { display: block; }
 /*# sourceMappingURL=style.css.map */

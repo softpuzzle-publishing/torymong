@@ -414,58 +414,43 @@
                                 </div>
                                 <div class="row row-40">
                                     <div class="col-12 col-md">
-                                        <div class="form-group">
+                                        <div class="form-group mb-0">
                                             <label for="form3">보상 상품 등록 관리</label>
                                             <!-- <button type="button" class="btn btn-secondary btn-sm ml-3 mt-n2" id="form5">보상 상품 추가</button> -->
                                         </div>
+                                        <div class="d-flex justify-content-end">
+                                            <button type="button" class="btn btn-primary" data-event="btn-add-product">추가</button>
+                                        </div>
                                         <div class="row">
-                                            <div class="col-3"> 
-                                                <div class="form-group">
-                                                    <label for="form3">상품명</label>
-                                                    <input type="text" id="form3" class="form-control" value="아이패드">
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="text" id="form3" class="form-control" value="트릭스">
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="text" id="form3" class="form-control" value="문화상품권">
+                                            <div class="col-12 mb-3">
+                                                <div class="row">
+                                                    <div class="col-3">상품명</div>
+                                                    <div class="col-3">최초수량</div>
+                                                    <div class="col-3">당첨수량</div>
+                                                    <div class="col-3">잔여수량</div>
                                                 </div>
                                             </div>
-                                            <div class="col-3"> 
-                                                <div class="form-group">
-                                                    <label for="form3">최초수량</label>
-                                                    <input type="text" id="form3" class="form-control" value="10">
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="text" id="form3" class="form-control" value="100">
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="text" id="form3" class="form-control" value="1000">
-                                                </div>
-                                            </div>
-                                            <div class="col-3"> 
-                                                <div class="form-group">
-                                                    <label for="form3">당첨수량</label>
-                                                    <input type="text" id="form3" class="form-control" value="1">
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="text" id="form3" class="form-control" value="20">
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="text" id="form3" class="form-control" value="320">
+                                            <div class="col-12 print-col">
+                                                <div class="row form mb-3">
+                                                    <div class="col-3">
+                                                        <input type="text" class="form-control" value="" placeholder="ex) 아이패드">
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <input type="text" class="form-control" value="" placeholder="ex) 10">
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <input type="text" class="form-control" value="" placeholder="ex) 3">
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <input type="text" class="form-control" value="" placeholder="ex) 7">
+                                                    </div>
+                                                    <div class="col-1 d-flex justify-content-end">
+                                                        <button type="button" class="btn btn-danger remove-product">삭제</button>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="col-3"> 
-                                                <div class="form-group">
-                                                    <label for="form3">잔여수량</label>
-                                                    <input type="text" id="form3" class="form-control" value="9">
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="text" id="form3" class="form-control" value="80">
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="text" id="form3" class="form-control" value="680">
-                                                </div>
+                                            <div class="add-product col-12">
+
                                             </div>
                                         </div>
                                     </div>
@@ -526,6 +511,19 @@
             $('#datatable').DataTable({
                 "searching": false,
             });
+
+            $('[data-event="btn-add-product"]').on('click', function () {
+                var img = $('.print-col').html();
+                var index = $(".form").index(this);
+
+                $('.add-product').append(img);
+                $(".add-product:eq(" + index + ") .remove-product").addClass('active');
+
+                $('.remove-product').click(function(){
+                    $(this).parent().parent().remove();
+                })
+            });
+           
         });
     </script>
 </body>

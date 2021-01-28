@@ -390,3 +390,7 @@ html.is-loading{
         }
     }  
 }
+.remove-product{
+    display:none;
+    &.active{display:block;}
+}
