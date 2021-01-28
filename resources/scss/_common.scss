@@ -311,7 +311,7 @@ body.body-login{
 
 .form-group label{font-weight: 500;}
 .my-collection{
-    border: 1px solid $border-color;padding: 1rem;border-radius: $border-radius;
+    border: 1px solid $border-color;padding: 0.8rem;border-radius: $border-radius;
     .list{
         display: flex;-ms-flex-wrap: wrap;flex-wrap: wrap; max-height: 150px;overflow: auto;
     }
@@ -368,6 +368,12 @@ html.is-loading{
     }
     &.search-torymong{
         max-width:800px;
+        .modal-content{
+            width:100%;
+        }
+    }
+    &.encyclopedia{
+        max-width:80%;
         .modal-content{
             width:100%;
         }

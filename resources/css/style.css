@@ -325,7 +325,7 @@ body.body-login { height: 100vh; background: #91677E; }
 
 .form-group label { font-weight: 500; }
 
-.my-collection { border: 1px solid #e4dcd3; padding: 1rem; border-radius: 0.25rem; }
+.my-collection { border: 1px solid #e4dcd3; padding: 0.8rem; border-radius: 0.25rem; }
 
 .my-collection .list { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; max-height: 150px; overflow: auto; }
 
@@ -374,6 +374,10 @@ html.is-loading #loading { display: block; }
 .modal-dialog.search-torymong { max-width: 800px; }
 
 .modal-dialog.search-torymong .modal-content { width: 100%; }
+
+.modal-dialog.encyclopedia { max-width: 80%; }
+
+.modal-dialog.encyclopedia .modal-content { width: 100%; }
 
 @media (max-width: 767.98px) { .modal-dialog.hidden-code .modal-content .excel-list .item { width: 100px; } }
 /*# sourceMappingURL=style.css.map */

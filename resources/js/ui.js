@@ -65,3 +65,6 @@ var Common = {
 };
 
 Common.init();
+$('.icon-del').click(function(){
+	$(this).parent().remove();
+})
