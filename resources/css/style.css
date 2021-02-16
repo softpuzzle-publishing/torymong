@@ -151,6 +151,10 @@ select.form-control { -webkit-appearance: none; -moz-appearance: none; backgroun
 
 .custom-control-checkbox-square input:checked ~ i { background: #dee2e6 url("../images/icon-s-checkbox-black.svg") no-repeat center/8.9px auto; border-color: #dee2e6; }
 
+.form-control-plaintext { padding-left: 0; padding-right: 0; }
+
+.form-control-plaintext:focus { outline: none; }
+
 .btn-logout { width: 80px; height: 80px; background: #dee2e6; display: flex; align-items: center; text-align: center; justify-content: center; margin-right: -1.5rem; }
 
 @media (max-width: 991.98px) { .btn-logout { width: 60px; height: 60px; }

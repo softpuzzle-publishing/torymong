@@ -210,7 +210,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-item has-treeview">
+                         <li class="nav-item has-treeview">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-info-circle"></i>
                                 <p>
@@ -256,8 +256,8 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-item has-treeview menu-open">
-                            <a href="#" class="nav-link active">
+                        <li class="nav-item has-treeview">
+                            <a href="#" class="nav-link">
                                 <i class="nav-icon far fa-images"></i>
                                 <p>
                                     배너 관리
@@ -266,7 +266,7 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item has-treeview">
-                                    <a href="../banner/banner_list.html" class="nav-link active">
+                                    <a href="../banner/banner_list.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>
                                             배너 목록
@@ -283,8 +283,8 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-item has-treeview">
-                            <a href="#" class="nav-link">
+                        <li class="nav-item has-treeview menu-open">
+                            <a href="#" class="nav-link active">
                                 <i class="nav-icon fas fa-gift"></i>
                                 <p>
                                     당첨자 관리
@@ -293,7 +293,7 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item has-treeview">
-                                    <a href="../winner/winner_list.html" class="nav-link">
+                                    <a href="../winner/winner_list.html" class="nav-link active">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>
                                             당첨자 목록
@@ -313,11 +313,11 @@
         <div class="content-wrapper">
             <!-- Content Header (Page header) -->
             <div class="content-header">
-                <h1>배너 상세</h1>
+                <h1>당첨자 목록</h1>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><i class="icon-home"></i></li>
-                    <li class="breadcrumb-item">배너 관리 </li>
-                    <li class="breadcrumb-item active">배너 상세</li>
+                    <li class="breadcrumb-item">당첨자 관리 </li>
+                    <li class="breadcrumb-item active">당첨자 목록</li>
                 </ol>
             </div>
             <!-- /.content-header -->
@@ -328,42 +328,112 @@
                     <div class="container-fluid">
 
                         <!-- 실 컨텐츠 -->
-                        <div class="card card-primary card-outline">
+                        <div class="card card-primary card-outline mb-4">
                             <div class="card-body">
-                                <div class="form-group">
-                                    <label for="form1">제목</label>
-                                    <div class="row row-10 align-items-end">
-                                        <div class="col"><input type="text" class="form-control" id="form1" maxlength="15" data-byte-target="#byte-check-title" value="5차 배너"></div>
-                                        <div class="col-auto">(<span id="byte-check-title">0</span>/15)</div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="form2">첨부파일</label>
-                                    <div class="input-group">
-                                        <div class="custom-file">
-                                            <input type="file" class="custom-file-input" id="noticeFile">
-                                            <label class="custom-file-label" for="noticeFile">배너썸네일.png</label>
+                                <div class="row row-40">
+                                    <div class="col-12 col-md">
+                                        <div class="form-group">
+                                            <label for="form1">기간</label>
+                                            <div class="row row-10 align-items-center">
+                                                <div class="col-auto col-md-2">
+                                                    <select name="" id="form1" class="form-control">
+                                                        <option value="">전체</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+                                                        </div>
+                                                        <input type="text" class="form-control float-right" data-event="rangeDatepicker" id="date-range">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-auto">
+                                                    <div class="btn-group" role="group">
+                                                        <button type="button" class="btn btn-default">오늘</button>
+                                                        <button type="button" class="btn btn-default">최근7일</button>
+                                                        <button type="button" class="btn btn-default">당월</button>
+                                                        <button type="button" class="btn btn-default">전월</button>
+                                                        <button type="button" class="btn btn-default">3개월</button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="form1">배너바로가기 url</label>
-                                    <div class="row row-10 align-items-end">
-                                        <div class="col"><input type="text" class="form-control" id="form1" maxlength="15" data-byte-target="#byte-check-title"></div>
-                                        <div class="col-auto">(<span id="byte-check-title">0</span>/15)</div>
+
+                                <div class="row row-40">
+                                    <div class="col-12 col-md">
+                                        <div class="form-group">
+                                            <label for="form2">검색어</label>
+                                            <input type="text" class="form-control" id="form2">
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="form3">내용</label>
-                                    <textarea name="" id="form3" cols="" rows="15" class="form-control" maxlength="500" data-byte-target="#byte-check-cont">10월 공지사항입니다 1월 공지사항입니다 1월 공지사항입니다 1월 공지사항입니다
-                                    </textarea>
-                                    <div class="text-right mt-2">(<span id="byte-check-cont">0</span>/500)</div>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <button type="button" class="btn btn-dark min-w-100px">조회</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex align-items-center justify-content-end">
-                            <a href="#none" class="btn btn-primary min-w-100px">수정</a>
-                            <a href="#none" class="btn btn-default min-w-100px ml-2">취소</a>
+
+                        <table class="table table-bordered" id="datatable">
+                            <caption>당첨자 목록 테이블</caption>
+                            <thead>
+                                <tr>
+                                    <th class="text-center">
+                                        <label class="custom-control custom-control-checkbox-primary m-0">
+                                            <input type="checkbox" id="" name=""><i></i>
+                                        </label>
+                                    </th>
+                                    <th class="text-center">No</th>
+                                    <th class="text-center">이메일</th>
+                                    <th class="text-center">발송현황</th>
+                                    <th class="text-center">미션명</th>
+                                    <th class="text-center">당첨선물</th>
+                                    <th class="text-center">등록일</th>
+                                    <th class="text-center">상세보기</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center">
+                                        <label class="custom-control custom-control-checkbox-primary m-0">
+                                            <input type="checkbox" id="" name=""><i></i>
+                                        </label>
+                                    </td>
+                                    <td class="text-center">9999</td>
+                                    <td class="text-center">abc@gmail.com</td>
+                                    <td class="text-center"><span class="text-danger">발송대기</span></td>
+                                    <td class="text-center">토리몽 5개 모으기</td>
+                                    <td class="text-center">CGV 영화관람권 2매</td>
+                                    <td class="text-center">2020-06-02</td>
+                                    <td class="text-center"><a href="winner_detail.html" class="text-underline">바로 가기</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <label class="custom-control custom-control-checkbox-primary m-0">
+                                            <input type="checkbox" id="" name=""><i></i>
+                                        </label>
+                                    </td>
+                                    <td class="text-center">9999</td>
+                                    <td class="text-center">abc@gmail.com</td>
+                                    <td class="text-center"><span class="text-success">발송완료</span></td>
+                                    <td class="text-center">토리몽 5개 모으기</td>
+                                    <td class="text-center">CGV 영화관람권 2매</td>
+                                    <td class="text-center">2020-06-02</td>
+                                    <td class="text-center"><a href="winner_detail.html" class="text-underline">바로 가기</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="col-auto">
+                                <a href="#none" class="btn btn-success mr-1">발송완료</a>
+                                <a href="#none" class="btn btn-success mr-1">발송대기</a>
+                                <a href="#none" class="btn btn-danger">삭제</a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="#none" class="btn btn-primary ml-2"><i class="fas fa-file-excel"></i> 엑셀 다운로드</a>
+                            </div>
                         </div>
                         <!-- //실 컨텐츠 -->
 

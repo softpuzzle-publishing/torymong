@@ -656,7 +656,7 @@ pre code { font-size: inherit; color: inherit; word-break: normal; }
 
 .form-control::placeholder { color: #939ba2; opacity: 1; }
 
-.form-control:disabled, .form-control[readonly] { background-color: #e9ecef; opacity: 1; }
+.form-control:disabled, .form-control[readonly] { background-color: #ffffff; opacity: 1; }
 
 select.form-control:focus::-ms-value { color: #666; background-color: #ffffff; }
 
@@ -1276,7 +1276,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 
 .custom-file-input:focus ~ .custom-file-label { border-color: #c7b0bd; box-shadow: none; }
 
-.custom-file-input:disabled ~ .custom-file-label { background-color: #e9ecef; }
+.custom-file-input:disabled ~ .custom-file-label { background-color: #ffffff; }
 
 .custom-file-input:lang(en) ~ .custom-file-label::after { content: "Browse"; }
 

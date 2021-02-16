@@ -95,6 +95,11 @@ select.form-control{
     }
 }
 
+.form-control-plaintext{
+    padding-left: 0;padding-right: 0;
+    &:focus{outline: none;}
+}
+
 .btn-logout{width: 80px;height: 80px;background: $light;display: flex;align-items: center;text-align: center;justify-content: center;margin-right: -1.5rem;}
 @include media-breakpoint-down(md) {
     .btn-logout{width: 60px;height: 60px;
