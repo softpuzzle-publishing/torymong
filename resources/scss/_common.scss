@@ -388,9 +388,27 @@ html.is-loading{
                 }
             }
         }
-    }  
+    }
 }
 .remove-product{
     display:none;
     &.active{display:block;}
+}
+
+html.html-error,
+html.html-error body{height: 100% !important;background: #ffffff;}
+.error {
+    display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;align-items: center;text-align: center;height: 100%;
+    strong {font-size: 120px;color: #ed023d;}
+    em {font-style: normal;font-size: 22px;margin-top: 20px;}
+    p {font-size: 20px;margin-top: 50px;margin-bottom: 80px;}
+    .btn {width: 150px;}
+}
+@media (max-width: 767.98px) {
+    .error {
+        strong {font-size: 80px;}
+        em {font-size: 20px;margin-top: 20px;}
+        p {font-size: 16px;margin-top: 30px;margin-bottom: 50px;}
+        .btn {width: 120px;}
+    }
 }
